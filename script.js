@@ -8,7 +8,7 @@ let data = [
 // console.log(data);
 
 const filteredData = data.filter(function(item) {
-    return item.age != null && item.age != undefined;
+    return item.age != null && item.age != undefined && item.name != null;
   });
   
   console.log(filteredData);
@@ -31,7 +31,7 @@ const students = [
   let newStudents = students.map((student)=> {
         return {
             name: student.name,
-            salary: student.points+30
+            points: student.points+30
         }
     })
 console.log(newStudents);
